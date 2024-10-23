@@ -30,7 +30,7 @@
                 <i class="lni lni-grid-alt"></i>
             </button>
             <div class="sidebar-logo">
-                <a href="dashboard.php">To-Do List</a>
+                <a href="index.php">To-Do List</a>
              </div>
         </div>
         <ul class="sidebar-nav">
@@ -46,7 +46,7 @@
                 </a>
             <?php endif; ?>
             <li class="sidebar-item  mb-3">
-                 <a href="dashBoard.php" class="sidebar-link">
+                 <a href="index.php" class="sidebar-link">
                     <i class="lni lni-agenda"></i>
                     <span>Task</span>
                  </a>

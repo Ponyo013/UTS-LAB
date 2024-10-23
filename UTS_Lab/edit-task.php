@@ -13,7 +13,7 @@ if (isset($_POST['task_id'], $_POST['task'], $_POST['status'], $_POST['priority'
         $stmt->bind_param('sssi', $task, $status, $priority, $task_id);
 
         if ($stmt->execute()) {
-            header("Location: dashboard.php");
+            header("Location: index.php");
             exit();
         } else {
             echo "Error: " . $stmt->error;

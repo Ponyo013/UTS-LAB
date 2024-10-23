@@ -11,7 +11,7 @@ if (isset($_POST['task_id'])) {
     $deleteStmt->bind_param("ii", $task_id, $user_id);
 
     if ($deleteStmt->execute()) {
-        header("Location: dashboard.php");
+        header("Location: index.php");
     } else {
         echo "Error deleting task: " . $conn->error;
     }

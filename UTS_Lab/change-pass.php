@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($newPassword !== $confirmPassword) {
         $_SESSION['error_message'] = 'New passwords do not match.';
-        header('Location: your-dashboard-page.php'); 
+        header('Location: editProfile.php'); 
         exit();
     }
 

@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $email;
 
-            header('Location: ../dashboard.php');
+            header('Location: ../index.php');
             exit();
         } else {
             $_SESSION['error'] = 'Invalid email or password. Try again';

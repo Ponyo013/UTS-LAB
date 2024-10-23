@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("iss", $user_id, $user_task, $priority);
 
     if ($stmt->execute()) {
-        header("Location: dashboard.php");
+        header("Location: index.php");
         exit();
     } else {
         echo "Error: " . $stmt->error;
